@@ -47,9 +47,18 @@
 
 
 
+//const bookList = document.querySelector('#book-list');
+
+//console.log('the parent node is:', bookList.parentNode);
+//console.log('the parent node is:', bookList.parentElement.parentElement);
+
+//console.log(bookList.children);
+
+
+
 const bookList = document.querySelector('#book-list');
 
-console.log('the parent node is:', bookList.parentNode);
-console.log('the parent node is:', bookList.parentElement.parentElement);
+console.log('book-list previous sibling is:', bookList.previousSibling)
+console.log('book-list previous element sibling is:', bookList.previousElementSibling)
 
-console.log(bookList.children);
+bookList.previousElementSibling.querySelector('p').innerHTML +='<br /> Too cool for everyone else!'
