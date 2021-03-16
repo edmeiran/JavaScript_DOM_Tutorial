@@ -64,7 +64,7 @@
 //bookList.previousElementSibling.querySelector('p').innerHTML +='<br /> Too cool for everyone else!'
 
 
-//const listItems = document.querySelectorAll('#book-list ul li');
+//git add. git const listItems = document.querySelectorAll('#book-list ul li');
 
 //Array.from(listItems).forEach(function(item){
  /// item.addEventListener('click', (e) => {
@@ -97,5 +97,14 @@ list.addEventListener('click', function(e){
    list.removeChild(li);
   }
 });
+
+//add book-list
+const addForm = document.forms['add-book'];
+addForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    const value = addForm.querySelector('input[type="text"]').value;
+    console.log(value);
+})
+
 
 
